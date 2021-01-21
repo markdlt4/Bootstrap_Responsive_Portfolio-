@@ -1,78 +1,96 @@
+/* Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    /* Box-model */
-    padding: 0;
-  
-    /* Positioning */
-    margin: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  
-    /* Typography */
-    font-size: 18px;
-    line-height: 150%;
-    color: #333;
-  
-    /* Visual */
-    background: #e7ebef;
-  }
-  
-  header {
-    background: #1054d2;
-  }
-  
-  h1 {
-    /* Box-model */
-    padding: 20px 0;
-  
-    /* Positioning */
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 28px;
-  
-    /* Typography */
-    color: #eee;
-    text-align: center;
-  
-    /* Visual */
-    background: #333;
-  }
-  
-  h2 {
-    font-size: 24px;
-  }
-  
-  a {
-    color: #d21034;
-  }
-  
-  .container {
-    /* Box-model */
-    width: 1024px;
-  
-    /* Positioning */
-    margin: 0 auto;
-  }
-  
-  #main-bio,
-  #contact-info,
-  #bio-image {
-    float: left;
-  }
-  
-  #main-bio {
-    width: 70%;
-  }
-  
-  #contact-info {
-    width: 30%;
-  }
-  
-  #bio-image {
-    /* Box-model */
-    width: 200px;
-    height: 200px;
-  
-    /* Positioning */
-  
-    margin-right: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.text-primary {
+  color: #3693ff;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: #fff;
+  padding: 1.5rem 8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 3px solid #3693ff;
+
+}
+
+#navbar ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar h2 a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#navbar li a:hover {
+  background-color: #3693ff;
+}
+
+/* Showcase Zone*/
+#showcase {
+  background: url(..//Users/marksmac/Desktop/Bootstrap_Responsive_Portfolio-/cpubacksplash.jpg) no-repeat center center/cover;
+  height: 91.7vh;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 81px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+.showcase-content h1 {
+  font-size: 4rem;
+  margin-block: 2rem;
+}
+
+.showcase-content .btn {
+  font-size: 1.5rem;
+  padding: 1rem 10rem;
+  background:#3693ff;
+}
+
+
